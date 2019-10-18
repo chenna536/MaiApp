@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>Bulk Payment</title>
+    <style>
+@font-face {
+      	font-family: 'CircularStd-Book';
+      	src: url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.eot');
+      	src: url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+      		url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.woff') format('woff'),
+      		url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.ttf') format('truetype');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+
+body {
+  font-family: 'CircularStd-Book';
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+p{
+  margin: 0;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+.info {
+  display: grid;
+  /* position: relative; */
+  grid-template-columns: 1fr 1fr;
+}
+.company_info {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+}
+.mai_details {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  
+}
+
+th {
+  background: #0957A5;
+  color: white;
+}
+
+</style>
+</head>
+<body style="margin: 0 auto; width: 75%; background-color: #f6f6f6;">
+    <div style="background-color: white;">
+      <!-- <div  style="text-align: center; margin: 8px auto; font-size: 3em; background: #0957A5; color: white;">
+        <b >RECEIPT</b>
+      </div> -->
+      <!-- <table cellpadding="0" cellspacing="0" >
+          <tr>
+            <td style="background-color: #0957A5; font-size: 2.5em; color: white">
+                <b>RECEIPT</b>
+            </td>
+          </tr>
+        </table> -->
+      <table cellpadding="0" cellspacing="0" >
+          <tr>
+              <td style="width:100%;" colspan="">
+            <img src="https://s3.ap-south-1.amazonaws.com/mai-cms/privacy/PRIVACY+POLICY+%26+TERMS+OF+USE+-+Mai+Insights_files/Mai_Logo.png" style=" width: 128px;">
+            </td>
+          </tr>
+          <tr>
+              <td>
+                  <h3>Mai - Smart Parenting & Child Growth Companion</h3>
+              </td>
+          </tr>
+        </table>
+      <!-- <div class="mai_details">
+        <div  style="text-align-last: left; margin: 1em;">
+          <h3>Mai - Smart Parenting & Child Growth Companion</h3>
+        </div>
+        <div class=""  style="display: grid; justify-items: end; align-items: center; margin: 1em;">
+          <img class="" src="https://s3.ap-south-1.amazonaws.com/mai-cms/privacy/PRIVACY+POLICY+%26+TERMS+OF+USE+-+Mai+Insights_files/Mai_Logo.png" style=" width: 128px;">
+        </div>
+      </div> -->      
+
+      <!-- <div style="" class="company_info">
+          <div style=" margin:1em; color: gray;" class="">
+              <b class="" >
+               Parentof Solutions Pvt. Ltd.</b>
+              <p>
+              No. 3421, 3rd Cross, 10th Main
+              Indiranagar 2nd Stage
+              Bengaluru, India. 560038</p>
+            </div>
+          <div style="margin:1em; color: #0957A5; display: grid; align-content:center" class="">
+                  <p><a class="" href="mailto:billing@themaiapp.com" target="">billing@themaiapp.com</a></p>
+                  <p><a class="" href="https://mai-web-v2.d.ceegees.in">www.themaiapp.com</a></p>  
+          </div>
+      </div> -->
+     
+      <!-- <div class="info">
+          <div style="margin : 1em;" class="" >
+                  <p style="color: gray;">BILLED TO</p>
+                  <p id="parentName">Parent Name</p>
+                  <p id="phoneNum">1234567890</p>
+                  <p id="email">mail@gmail.com</p>
+          </div>
+          <div style="margin: 1em;" class="" >
+                  <p style="color: gray;"  class="">RECEIPT NUMBER</p>
+                  <p id="receiptNum">01234XXXX</p>
+                  <p style="color: gray;"  class="">DATE OF ISSUE</p>
+                  <p id="date">09/10/2019</p>
+          </div>
+      </div>        -->
+      <table style="padding: 1em;">
+          <tbody >
+                <tr>
+                  <td style="color: gray; text-align-last: left">BILLED TO</td>
+                  <td style=" color: gray; text-align-last: right">RECEIPT NUMBER</td>
+                </tr>
+                <tr>
+                    <td style="text-align-last: left">Parent Name</td>
+                    <td style="text-align-last: right">01234XXXX</td>
+                  </tr>
+                <tr >
+                  <td style="text-align-last: left">1234567890</td>
+                  <td style="color: gray; text-align-last: right">DATE OF ISSUE</td>
+                </tr>
+                <tr >
+                  <td style="text-align-last: left">mail@gmail.com</td>
+                  <td style="text-align-last: right">09/10/2019</td>
+                </tr>
+          </tbody>
+        </table>
+        <!-- <div style="padding: 8px;" class="">    -->
+        <table border-collapse="collapse"  class="">
+              <thead>
+                <tr>
+                  <th colspan="1" style="text-align-last: left">DESCRIPTION</th>
+                  <th colspan="2" style="padding: 0 auto">CHILD NAME</th>
+                  <th colspan="1" style="text-align-last: right" class="">AMOUNT(&#x20B9;)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-top:10px solid white;">
+                  <td colspan="1" style="text-align-last: left" class="">Social Genius Test</td>
+                  <td colspan="2" style="padding: 0 auto" class="">Hari Krishna</td>
+                  <td colspan="1" style="text-align-last: right" class="">597.00</td>
+                </tr>
+              </tbody>
+        </table>
+          <table class="">
+              <tbody>
+                    <tr >
+                      <td style=" text-align-last: left; color: gray;">CGST</td>
+                      <td style="text-align-last: right">10.00</td>
+                    </tr>
+                    <tr >
+                      <td style="text-align-last: left; color: gray;">SGST</td>
+                      <td style="text-align-last: right">10.00</td>
+                    </tr>
+                    <tr >
+                      <td style="text-align-last: left; color: gray;">SUBTOTAL</td>
+                      <td style="text-align-last: right">299.00</td>
+                    </tr>
+                    <tr>
+                      <th colspan="" style="text-align-last: left" class="">PAID</th>
+                      <th style="text-align-last: right" class="" >Rs.299.00</th> 
+                    </tr>
+              </tbody>
+            </table>    
+      <div style="padding: 8px;" class="">
+      <p>TERMS</p>
+      <p id="terms"></p>
+      <p>- Any other terms and conditions with Receipt</p> 
+      </div> 
+       <table style="padding: 8px; margin-top: 1em" > 
+          <th style="height: 1em;" class="">
+          </th>
+       </table> 
+       <table cellpadding="0" cellspacing="0" class="">
+          <tr>
+            <td style="color: gray;">
+                
+                    <b class="" >
+                     Parentof Solutions Pvt. Ltd.</b>
+                    <p>
+                    No. 3421, 3rd Cross, 10th Main
+                    Indiranagar 2nd Stage
+                    Bengaluru, India. 560038</p>
+            </td>
+
+          </tr>
+          <tr>
+            <td style="color: #0957A5;">
+                <p><a  href="mailto:billing@themaiapp.com" target="">In case you are facing any issues, please feel free to reach out to us at billing@themaiapp.com</a></p>
+                <p><a  href="https://mai-web-v2.d.ceegees.in">www.themaiapp.com</a></p>  
+            </td>
+          </tr>
+        </table>
+      </div>
+</body>
+</html>

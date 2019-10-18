@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>Receipt</title>
+
+    <style>
+      /* th {
+        background-color: #4CAF50;
+      } */
+      /* tr:nth-child(even) {background-color: #f2f2f2;} */
+        /* table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+        th, td {
+  padding: 5px;
+  text-align: left;    
+} */
+
+@font-face {
+      	font-family: 'CircularStd-Book';
+      	src: url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.eot');
+      	src: url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+      		url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.woff') format('woff'),
+      		url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.ttf') format('truetype');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+body {
+  font-family: 'CircularStd-Book';
+}
+/* img {
+  border-radius: 50%;
+} */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+P {
+  margin: 0;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .img-pos {
+  text-align: center;
+}
+  .w3-address {
+  border: none;
+  }
+}
+th {
+  background: #0957A5;
+  color: white;
+}
+    </style>
+</head>
+<body>
+
+    <div class="w3-container w3-margin-top w3-responsive">
+      <div style="font-size: 2em; "><b>Thanks for your order, '</firstname>'.</b>
+          <p>Here's your receipt for order number 1548056382.</p>
+          
+        <p>Wishing you happy parenting!</p>
+      </div>
+      <div class="w3-container w3-center" style=" font-size: 3em; background: #0957A5; color: white;"><b>RECEIPT</b></div>
+      <div class="w3-row" >
+        <div class="img-pos">
+        <img class="w3-right w3-cell w3-cell-top w3-margin" src="https://s3.ap-south-1.amazonaws.com/mai-cms/privacy/PRIVACY+POLICY+%26+TERMS+OF+USE+-+Mai+Insights_files/Mai_Logo.png" style="width: 128px;">
+      </div>
+        <div class=" w3-cell w3-cell-top w3-half w3-row">
+        <h4 style="padding: 8px" >Mai - Smart Parenting & Child Growth Companion</h4>
+          <div style="padding-left: 8px;" class="w3-cell w3-half w3-cell-top w3-text-gray">
+              <b class="" >
+               Parentof Solutions Pvt. Ltd.</b>
+              <p>
+              No. 3421, 3rd Cross, 10th Main
+              Indiranagar 2nd Stage
+              Bengaluru, India. 560038</p>
+          </div>
+          <div style="color: #0957A5; padding-left:8px; padding-top: 1.5em;" class=" w3-cell w3-cell-bottom">
+                  <p> <a class="" href="mailto:billing@themaiapp.com" target="">billing@themaiapp.com</a></p>
+                  <p><a class="" href="https://mai-web-v2.d.ceegees.in">www.themaiapp.com</a></p>
+          </div>
+      </div>       
+      </div>
+      <div style="padding: 8px; margin-top: 8px;" class="w3-row">
+      <div class="w3-twothird ">
+          <div style="" class=" w3-text-gray ">
+            <p>BILLED TO</p>
+          </div>
+          <div class=" ">
+            <p>Parent Name</p>
+            <p>Phone Number</p>
+            <p>Email ID</p>
+          </div>
+        </div> 
+        <div class="w3-third">
+            <div style="" >
+              <p class=" w3-text-gray ">RECEIPT NUMBER</p>
+              <p>01234XXXX</p>
+            </div>
+            <div class=" ">
+              <p class=" w3-text-gray ">DATE OF ISSUE</p>
+              <p>03/10/2019</p>
+            </div>
+          </div>
+        </div>
+      
+      <table class="" >
+        <tr style="font-size: 1.1em; background: #0957A5;">
+          <th colspan="">DESCRIPTION</th>
+          <th colspan="" style="" class="">FOR CHILD</th>
+          <th style="" class="w3-right">AMOUNT(&#x20B9;)</th>
+        </tr>
+        <tr style="border-top:10px solid white; background-color: #f2f2f2">
+            <td colspan="">Social Genius Assessment</td>
+            <td colspan="" style="" class="">Child Name </td>
+          <td class="w3-right">179.00</td>
+        </tr>
+      </table>
+      <table class="w3-right" style="width: 200px; margin-bottom: 1em; ">
+        
+        <!-- <tr>
+            <td class=" w3-text-gray ">DISCOUNT</td>
+            <td>0.00</td>
+          </tr>
+        <tr>
+            <td class=" w3-text-gray ">SUBTOTAL AFTER DISCOUNT</td>
+            <td>0.00</td>
+          </tr>
+          <tr> -->
+              <td class=" w3-text-gray ">CGST</td>
+              <td class="w3-right">10.00</td>
+            </tr>
+            <tr>
+                <td class=" w3-text-gray ">SGST</td>
+                <td class="w3-right">10.00</td>
+              </tr> 
+              <tr>
+                <td class=" w3-text-gray ">SUBTOTAL</td>
+                <td class="w3-right">199.00</td>
+              </tr>
+<tr>
+         
+       <th colspan="" style="" class="">PAID</th>
+        <th class="w3-right" style=" width: 100%; margin-right: 0%">Rs.199.00</th> 
+        </tr>
+      </table>
+      </div>
+      <div class="w3-container">
+      <p>TERMS</p>	
+      <p>  - Refund policy </p>
+      <p>- Any other terms and conditions with Receipt</p>
+      </div>
+       <footer class="w3-cell-row w3-container" style="width: 100%; margin-top: 1em" > 
+          <div style=" height: 1em; background: #0957A5;" class="w3-cell w3-container">
+            </div>
+      </footer> 
+</body>
+</html>
